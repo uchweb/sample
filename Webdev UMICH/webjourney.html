@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+<meta charset="UTF-8">
+<title>Practice</title>
+    </head>
+    <body>
+        <main>
+            <h1>Links</h1>
+            <p>Knowing how to your code to other documenst is important</p>
+            <div id="abs">
+                <h2>Absolute Reference</h2>
+                <p>Absolute references (sometimes called external links) connect to pages in other domains. In the href attribute of the tage the full URL of the page, image, or other resources you would like to link to is specified. Once example might be your quest to list some of the greatest bakeries of all time. Since you want to link to the bakeries themselves and not to files that you wrote, you would use an absolute reference.</p>
+                <ul>
+                    <li><a href="https://washtenawdairy.com/">Washtenaw Dairy</a></li>
+                    <li><a href="http://thedexterbakery.com">The Dexter Bakery</a></li>
+                </ul>
+                <p>If any of the companies change thier address these liks will no longer work</p>
+            </div>
+            <div id="rel">
+                <h2>Relative References</h2>
+                <p>Relative references connect to pages within your domain. The the href attribute of the tag only the folder (if any) and filename is specified. Some examples of when you might use relative refereces would be in your navigation bar or links to your own images.</p>
+                <ul>
+                    <li><a href="index.html" target="_blank">My Index File</a></li>
+                    <li><a href="Newpage.html" target="_blank">A New page</a></li>
+                    <li><a href="myfirstpage.html" target="_blank">Firstpage</a></li>
+                </ul>
+            </div>
+            <div id="img">
+                <h2>Images as Links</h2>
+                <p>This picture on being clicked opes in another websit</p>
+                <a href="https://washtenawdairy.com/"><img src="images/WD_donut.jpg" alt="Washtenaw Dairy"></a>
+            </div>
+            <div id="emb">
+                <h2>Embedded Links</h2>
+                <ol>
+                    <li><a href="#abs">Absolute Reference</a></li>
+                    <li><a href="#rel">Relative Reference</a></li>
+                    <li><a href="#abs">Images as Links</a></li>
+                    <li><a href="#emb">Embedded Links</a></li>
+                </ol>
+            </div>
+            <br>
+            <hr>
+            <h1> Common Block Tags</h1>
+            <h2>Address</h2>
+            <p>The address element indicates that the text is a specific address, perhaps contact information for the author, eg,</p>
+                <address>
+                    1715 Walnut Blvd<br>
+                    Ashtabula, OH 44004
+                </address>
+                <hr>
+                <h2>Blockquote</h2>
+                <p>The blockquote element is used for extended quotations. It is often paired with the the cite attribute in order to show or link the source of the quote.</p>
+                <blockquote>"If something seems particularly hard, there is usually no value in staying up all night and staring at it. Take a break, take a nap, have a snack, explain what you are having a problem with to someone (or perhaps your dog), and then come back to it with fresh eyes." - Charles Severance</blockquote>
+                <hr>
+                <h2>Details</h2>
+                <p>The details element is used in conjunction with the summary tag and is used to hide/show content. It is one of the tags that was created in response to the repeated using of scripting tags.</p>
+                <details>
+                    <summary>Click here to hide/show the additional content.</summary> On most browsers clicking on the symbol next to the summary word or phrase will cause this text to appear/disappear. On rare occasions if the details tag isn't supprted, the text is always shown.
+                </details>
+                <hr>
+                <h2>Yet another Details Example</h2>
+                <details>
+                    <summary><b>Who Am I</b></summary>I am Joey, A Web Developer in the making. I <sup>used</sup> to find <sub>webdev</sub>
+                    boring, but here we are.
+                </details>
+                <hr>
+                <br>
+                <h1>Some Specialized Tags</h1>
+                <h2>Button</h2>
+                <p>Here is an example of the button tag. It is a little bit misleading since it is a button that doesn't do anything. You would want to add some interactivity, perhaps with JavaScript.</p>
+                <button>open</button><br>
+                <button>close</button>
+                <hr>
+                <h2>Meter</h2>
+                <p>The meter element is cool and can take a lot of attributes. But again it is better if you have some code that can make the attribute values dynamic instead of "hardcoding" them. When you think of a meter, think of a final score for a test.</p>
+                <meter min="0" max="100" value="50%">50%</meter><br>
+                <meter min="0" max="1" value="20">25%</meter><br>
+                <meter min="5" max="10" value="8">60%</meter><br>
+                <hr>
+                <h2>Progress</h2>
+                <p>The progress element has a very similar layout to the meter tag. The difference is that there is an assumption that there will be a progression toward 100%. This tag is often used when filling out a form that has many pages of questions.</p>
+                <progress value="70" max="100">70%</progress><br>
+                <hr>
+                <h2>iframe</h2>
+                <p>The iframe element is used to next content. It is not supported equally well by all browsers. You will want to explore options such as width and height.</p>
+                <iframe src="https://www.intro-webdesign.com/" title="Web Design for Everybody"></iframe>
+                <br><iframe id="inlineFrameExample"
+    title="Inline Frame Example"
+    width="300"
+    height="200"
+    src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+</iframe><br>
+<br>
+<br>
+<a>One</a> <a>Two</a><a>Three</a><a>Four</a>
+
+        </main>
+
+    </body>
+</html>
